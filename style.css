@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    overflow: hidden;
+}
+
+/* ajuste do video */
+video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* personalizando o titulo */
+header{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    color: #fff;
+    text-align: center;
+}
+
+header h1{
+    font-weight: 500;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+header span{
+    font-weight: 800;
+    font-size: 7rem;
+    display: block;
+}
+
+/* personalizando a descricao */
+.descricao {
+    position: absolute;
+    bottom: 2%;
+    width: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #000;
+    color: #fff;
+    border-radius: 2px;
+    opacity: 0.7;
+    padding: 1.5rem;
+}
+
+.descricao p{
+    text-align: justify;
+    max-width: 42rem;
+    margin-inline: auto;
+    line-height: 1.5;
+}
+
+/* personalizando o link */
+.copyrigth{
+    font-size: 0.65rem;
+}
+
+/* personalizando nome do link */
+.copyright a{
+    color: #fff;
+    text-underline-offset: 1.8px;
+}
+
+/* reponsividade */
+@media screen and (max-width: 1200px) {
+
+    header span{
+        font-weight: 800;
+        font-size: 4rem;
+        display: block;
+    }
+
+    .descricao{
+        position: absolute;
+        width: 88vw;
+        bottom: 0;
+        border-radius: 20px 20px 0 0;
+        margin: auto;
+        padding: 0.6rem 1.5rem;
+    }
+}
